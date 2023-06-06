@@ -9,64 +9,132 @@
 
 <url>
   <loc>https://ezpie.vercel.app/</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://ezpie.vercel.app/about</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://ezpie.vercel.app/blogs</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ezpie.vercel.app/privacy</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <loc>https://ezpie.vercel.app/courses</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ezpie.vercel.app/terms</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://ezpie.vercel.app/blogs/Decoding-Tokenization-An-Easy-to-Understand-Guide-to-Grasping-Tokenization-in-JavaScript</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/blogs/css-code-this-not-this</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/better-ways-to-create-react-app</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/ultimate-beginner-react-course</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/this-post-is-made-by-an-ai</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/python-for-data-science</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/how-to-write-clean-code-for-python-developers</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/python-tricks</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/binary-search</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ezpie.vercel.app/blogs/react-hooks</loc>
-  <lastmod>2023-05-11T12:52:23+00:00</lastmod>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
-
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/intro</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/what-is-ml</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/what-is-a-neural-network</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/what-is-pytorch</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/getting-started</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/what-are-tensors</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/reshape-squeezing-unsqueezing</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/pytorch-and-numpy</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/device-agnostic</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/pytorch-model-journey</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ezpie.vercel.app/courses/machine-learning/.</loc>
+  <lastmod>2023-06-06T11:45:54+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
 </urlset>
