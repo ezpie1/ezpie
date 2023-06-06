@@ -22,5 +22,17 @@ const { title, description, image } = Astro.props;
   <meta property="og:description" content={description} />
   <meta property="og:image" content={`https://ezpie.vercel.app${image}`} />
   <meta property="og:type" content="article" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPV7P7676F" type="text/partytown"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RPV7P7676F');
+  </script>
+  <!-- ----------------------- -->
+
   <title>{title}</title>
 </head>
