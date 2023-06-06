@@ -16,6 +16,7 @@
     "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.2.3",
     "@tailwindcss/aspect-ratio": "^0.4.2"
   }
 }
