@@ -1,10 +1,12 @@
-      layout: ../../layout/PostLayout.astro
-      title: Understand Linear Regression with Real World Concept
-      description:  Learn about linear regression, a powerful statistical technique used to predict outcomes. Discover the core concepts, explore real-world applications in real estate and sales forecasting, and see practical code snippets in Python.
-      published: 5/7/2023
-      author: Elliot
-      permalink: /blogs/Understand-linear-regression-with-real-world-concept
-      image: /images/thumbnail/https://www.canva.com/design/DAFlIDkE_Zk/W3rz0OA3UWparxRdO3SgKw/view?utm_content=DAFlIDkE_Zk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+---
+layout: ../../layout/PostLayout.astro
+title: Understand Linear Regression with Real World Concept
+description:  Learn about linear regression, a powerful statistical technique used to predict outcomes. Discover the core concepts, explore real-world applications in real estate and sales forecasting, and see practical code snippets in Python.
+published: 5/7/2023
+author: Elliot
+permalink: /blogs/Understand-linear-regression-with-real-world-concept
+image: /images/thumbnail/https://www.canva.com/design/DAFlIDkE_Zk/W3rz0OA3UWparxRdO3SgKw/view?utm_content=DAFlIDkE_Zk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+---
 
 In the vast realm of machine learning, where algorithms analyze and make predictions based on data, linear regression stands tall as a fundamental and powerful technique. By leveraging the principles of statistics, linear regression enables us to understand and predict the relationships between variables. In this article, we will demystify the concept of linear regression, breaking down complex terms into simple explanations.
 
@@ -61,12 +63,14 @@ predicted_blood_pressure = model.predict(new_age)
 
 print("Predicted blood pressure:", predicted_blood_pressure)
 ```
+
 <br>
 <b>Demand Analysis:</b> Companies often use linear regression to analyze the relationship between product demand and various factors. For instance, a retailer may want to understand how product price, advertising expenditure, and competitor prices affect sales. By collecting data on these variables and applying linear regression, they can estimate the impact of each factor on product demand and optimize their pricing and marketing strategies accordingly.
 
 <b>Scenario:<b> <br>
 A retailer collects data on the monthly sales volume (dependent variable) of a specific product and the corresponding average prices of the product (independent variable). They also track the average monthly advertising expenditure for that product. Using this data, the retailer can perform linear regression to determine how changes in price and advertising impact product sales.
 <br>
+
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -96,6 +100,7 @@ predicted_sales = model.predict(np.concatenate((new_price, new_advertising), axi
 
 print("Predicted sales volume:", predicted_sales)
 ```
+
 <br>
 <b> Conclusion </b>
 
