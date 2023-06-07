@@ -11,7 +11,7 @@ const posts = (await Astro.glob("./blogs/*.{md, mdx}")).sort(
 
 <MainLayout title="Ezpie - Blogs">
   <h1 class="text-center text-6xl my-24 font-bold">Blogs</h1>
-  <div class="grid grid-cols-1 mb-5 justify-items-center md:grid-cols-2">
+  <ul class="grid list-none justify-items-center gap-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mb-5 px-8 mx-auto max-w-screen-2xl">
     {
       posts.map((post) => (
         <PostCard
@@ -24,5 +24,5 @@ const posts = (await Astro.glob("./blogs/*.{md, mdx}")).sort(
         />
       ))
     }
-  </div>
+  </ul>
 </MainLayout>

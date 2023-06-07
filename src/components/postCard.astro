@@ -9,34 +9,29 @@ const {
 } = Astro.props;
 ---
 
-<article
-  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-5"
->
-  <img class="rounded-t-lg" src={image} alt="Image for the post in ezpie" />
-  <div class="p-5">
-    <h5
-      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-    >
-      {title}
-    </h5>
-    <p
-      itemprop="author"
-      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-    >
-      By - {author}
-    </p>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      Published - {published}
-    </p>
-
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      {description}
-    </p>
-    <a
-      href={permalink}
-      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-    >
-      Read more
+<li class="list-none p-0">
+  <article class="max-w-sm overflow-hidden bg-gray-800 rounded-xl border-2 border-gray-600 hover:scale-105 duration-500">
+    <a href={permalink}>
+      <img class="w-full m-0 mb-1 rounded-t-xl" src={image} alt="Image for the post in ezpie" />
+      <div class="p-5">
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          {title}
+        </h5>
+        <p
+          itemprop="author"
+          class="mb-3 font-normal text-gray-400"
+        >
+          By - {author}
+        </p>
+        <p class="mb-3 font-normal text-gray-400">
+          Published - {published}
+        </p>
+        <p class="mb-3 font-normal text-gray-400">
+          {description}
+        </p>
+      </div>
     </a>
-  </div>
-</article>
+  </article>
+</li>
