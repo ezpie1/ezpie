@@ -1,13 +1,11 @@
-import { createClient } from "@supabase/supabase-js";
 import { useRef, useState } from "react";
 import { useHover } from "usehooks-ts";
+import { createClient } from "@supabase/supabase-js";
 
-// Supabase URL and API key
-const supabaseURL = 'https://moutdoiehpyyjejkajgc.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vdXRkb2llaHB5eWplamthamdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYzMTg1OTAsImV4cCI6MjAwMTg5NDU5MH0.EEo91T-AN3V8NHYWTJzeAb6aVAG_IOnnkSNKzOMmXL4';
+const SUPABASE_URL='https://moutdoiehpyyjejkajgc.supabase.co'
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vdXRkb2llaHB5eWplamthamdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYzMTg1OTAsImV4cCI6MjAwMTg5NDU5MH0.EEo91T-AN3V8NHYWTJzeAb6aVAG_IOnnkSNKzOMmXL4'
 
-// Create Supabase client instance
-const supabase = createClient(supabaseURL, supabaseKey, { persistSession: false });
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 export default function NewsLetter() {
     const hoverRef = useRef(null);
@@ -18,21 +16,22 @@ export default function NewsLetter() {
     // Function to add a row to the newsletter table in Supabase
     const addToNewsletter = async () => {
         try {
-            const { data, error } = await supabase
-                .from('Newsletter') // Table name in Supabase
-                .insert([{ username: name, email: email }]);
+            const {data, error} = await supabase
+                .from('Newsletter')
+                .insert([{
+                    username: name,
+                    email: email
+                }]);
 
             if (error) {
-                console.error('Error adding row to newsletter table:', error.message);
-                alert("Ops! There has been an error! Please report it at https://github.com/ezpieco/ezpie/issues");
+                alert("Ops! There's been a bug! Please report at https://github.com/ezpieco/ezpie/issues")
             } else {
-                console.log('Row added to newsletter table:', data);
+                alert("Thanks for joining in! You will be the first to receive latest blogs")
             }
         } catch (error) {
-            console.error('Error adding row to newsletter table:', error.message);
-            alert("Thanks for joining the group! You will be the first to receive our latest posts and secret tips! Shh! Don't tell anyone.");
+            console.log('Error adding row to newsletter table:', error.message)
         }
-    };
+    }
 
     // Handle form submission
     const handleSubmit = (e) => {
