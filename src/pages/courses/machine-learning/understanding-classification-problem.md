@@ -1,6 +1,6 @@
 ---
 layout: ../../../layout/CourseLayout.astro
-title: "Introduction of PyTorch Machine Learning Crash Course"
+title: "Understanding Classification problems"
 permalink: /courses/machine-learning
 ---
 
