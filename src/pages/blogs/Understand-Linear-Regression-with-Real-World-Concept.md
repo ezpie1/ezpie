@@ -4,7 +4,7 @@ title: Understand Linear Regression with Real World Concept
 description:  Learn about linear regression, a powerful statistical technique used to predict outcomes. Discover the core concepts, explore real-world applications in real estate and sales forecasting, and see practical code snippets in Python.
 published: 6/7/2023
 author: Elliot
-permalink: /blogs/Understand-linear-regression-with-real-world-concept
+permalink: /blogs/Understand-Linear-Regression-with-Real-World-Concept
 image: /images/thumbnail/understanding-linear-regression.png
 ---
 
