@@ -1,33 +1,45 @@
+// importing useState hook from the React library
 import { useState } from "react";
+// importing supabase object from supabase.js
 import { supabase } from "../../supabase";
 
+// defining a function component
 export default function NewsLetter() {
+    // initializing name and email state variables using useState hook
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
+    // defining an async function to handle form submission
     async function handleJoin() {
+        // inserting user's name and email into the NewsLetter table of the database
         const {data, error} = await supabase
         .from("NewsLetter")
         .insert({
             username: name,
             email: email,
         })
+        // selecting newly inserted record's id from the database
         .select("id")
         .single()
 
+        // displaying an alert if no data is returned
         if (!data) {
             alert("No data")
             return
         }
 
+        // displaying an alert if there is an error while inserting data
         if (error) {
             alert("We missed up!")
             return
         }
 
+        // displaying a success message on successful form submission
         alert("Thanks for Joining in!")
     }
 
+    // rendering a form to collect user's name and email
+    // and a button to submit the form
     return (
         <div className="text-center">
             <div className="text-white">
