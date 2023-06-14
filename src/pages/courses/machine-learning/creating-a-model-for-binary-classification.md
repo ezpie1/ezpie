@@ -6,7 +6,7 @@ permalink: /courses/machine-learning
 
 Now that we have some data let's make a model that can learn patterns and predict in this data.
 
-Before we do that we need to cover one small thing which is visualizing with an online tool known as <a href="playground.tensorflow.org" class="text-blue-600 hover:text-blue-400 hover:underline">TensorFlow Playground</a>
+Before we do that we need to cover one small thing which is visualizing with an online tool known as <a href="https://playground.tensorflow.org" class="text-blue-600 hover:text-blue-400 hover:underline">TensorFlow Playground</a>
 
 ## What's tensorflow playground?
 
