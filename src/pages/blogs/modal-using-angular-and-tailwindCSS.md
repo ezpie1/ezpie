@@ -2,9 +2,9 @@
 layout: ../../layout/PostLayout.astro
 title: Building a Modal Using Angular and TailwindCSS
 description: In this blog learn how to create modal forms in angular using tailwindCSS. Modern design principles are at the heart of this approach, ensuring a seamless and engaging user experience. Unravel the code behind creating elegant modals, complete with responsive design, intuitive user controls, and dynamic form fields. 
-published: 19/08/2023
-author: Ayush Agarwal
-permalink: /blogs/build-modal-angular-tailwindCSS
+published: 8/19/2023
+author: "Ayush Agarwal"
+permalink: /blogs/modal-using-angular-and-tailwindCSS
 image: /images/thumbnail/build-modal-angular-tailwindCSS.svg
 ---
 
@@ -12,7 +12,7 @@ Greetings, fellow developers! In our coding journey, we often find ourselves tas
 
 Rather than redirecting users to an entirely new page or tab, modals elegantly present the form right within the current page's context. If you're still a tad unclear, don't fret. We'll delve deeper into this concept by taking a sneak peek at the snapshot of the final page we're embarking on building today.
 
-%[https://vimeo.com/855911949?share=copy] 
+%[https://vimeo.com/855911949?share=copy]
 
 When the button is clicked, we observe the form comes right on the same instead of going to a new page.
 
@@ -20,10 +20,8 @@ Now let's get into building this simple modal.
 
 ### Pre Requirements
 
-* Basic knowledge of Angular components and directives.
-    
-* Experience in using Tailwind CSS.
-    
+- Basic knowledge of Angular components and directives.
+- Experience in using Tailwind CSS.
 
 ### Project Setup
 
@@ -97,21 +95,17 @@ After this, our modal component is ready. Open the `form-modal.component.html` f
       </button>
     </div>
   </div>
-  
+
 ```
 
 #### Understanding the Code:
 
 Let's break down the essential components of this code and understand how it enables the creation of engaging and user-friendly form interfaces.
 
-* **Modal Display Logic**: The `*ngIf="isModalOpen"` directive controls the visibility of the modal. When `isModalOpen` is true, the modal content becomes visible, allowing users to interact with the form within it.
-    
-* **Overlay and Background Dimming**: To bring focus to the modal content, an overlay is created using a `fixed` element. This overlay, with a semi-transparent black background (`bg-black opacity-50`), subtly dims the underlying content.
-    
-* **Close Button**: A close button in the top-right corner lets users dismiss the modal. It's implemented with an SVG icon that, when clicked, triggers the `closeModal()` method. This method can be customized to toggle the `isModalOpen` flag, closing the modal.
-    
-* **(mouseleave)="closeModal()"** closes the modal automatically when the mouse cursor leaves the modal making the UI more interactive.
-    
+- **Modal Display Logic**: The `*ngIf="isModalOpen"` directive controls the visibility of the modal. When `isModalOpen` is true, the modal content becomes visible, allowing users to interact with the form within it.
+- **Overlay and Background Dimming**: To bring focus to the modal content, an overlay is created using a `fixed` element. This overlay, with a semi-transparent black background (`bg-black opacity-50`), subtly dims the underlying content.
+- **Close Button**: A close button in the top-right corner lets users dismiss the modal. It's implemented with an SVG icon that, when clicked, triggers the `closeModal()` method. This method can be customized to toggle the `isModalOpen` flag, closing the modal.
+- **(mouseleave)="closeModal()"** closes the modal automatically when the mouse cursor leaves the modal making the UI more interactive.
 
 Next, we need to implement the logic to close and open the modal in the `form-modal.component.ts` file.
 
@@ -136,16 +130,14 @@ export class FormModalComponent implements OnInit {
 
   closeModal() {
     this.isModalOpen = false;
-  } 
+  }
 }
 ```
 
 This code defines the logic behind an Angular component responsible for creating interactive modals.
 
-* **Modal State**: The variable `isModalOpen` is initialized as `false`, signifying that the modal is closed by default.
-    
-* **Modal Interaction Methods**: The `openModal()` method sets `isModalOpen` to `true`, enabling the modal's visibility. Conversely, the `closeModal()` method sets `isModalOpen` to `false`, hiding the modal.
-    
+- **Modal State**: The variable `isModalOpen` is initialized as `false`, signifying that the modal is closed by default.
+- **Modal Interaction Methods**: The `openModal()` method sets `isModalOpen` to `true`, enabling the modal's visibility. Conversely, the `closeModal()` method sets `isModalOpen` to `false`, hiding the modal.
 
 #### Including the modal component
 
@@ -159,10 +151,8 @@ In the final step, we just need to use the modal-form selector in `app.component
 <app-form-modal #formModal></app-form-modal>
 ```
 
-* **Click Event**: The `(click)="formModal.openModal()"` event handler is attached to the button. When the "Fill Form" button is clicked, this handler triggers the `openModal()` method of the `formModal` instance.
-    
-* **Modal Component**: Just below the button, the `<app-form-modal #formModal></app-form-modal>` element is used to incorporate the previously defined `FormModalComponent`. This is where the modal's logic resides.
-    
+- **Click Event**: The `(click)="formModal.openModal()"` event handler is attached to the button. When the "Fill Form" button is clicked, this handler triggers the `openModal()` method of the `formModal` instance.
+- **Modal Component**: Just below the button, the `<app-form-modal #formModal></app-form-modal>` element is used to incorporate the previously defined `FormModalComponent`. This is where the modal's logic resides.
 
 ### Launch the Application
 
