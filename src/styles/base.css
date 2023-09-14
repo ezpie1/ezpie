@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Prosto+One&family=Sarabun&family=Shrikhand&family=Titillium+Web&display=swap');
+
+body {
+    font-family: "roboto", Helvetica, 'Titillium Web', sans-serif;
+    color: #1f1f1f;
+    font-size: 1.1rem;
+}
+
+h1 {
+    color: #101922;
+}
+
+.about {
+    background-color: #011a22;
+}
+
+.about {
+    color: #eee;
+}
+
+.about h1 {
+    color: #eee;
+}
