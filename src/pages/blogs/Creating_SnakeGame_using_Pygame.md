@@ -2,7 +2,7 @@
       layout: ../../layout/PostLayout.astro
       title: Creating an Engaging Snake Game with pygame
       description: Dive into the world of game development as we guide you through building a captivating Snake game using the pygame library. Learn the essentials of game design, graphics, and logic, all while having fun!
-      published: September 30, 2023
+      published: 10/01/2023
       author: Tholkappiar M
       permalink: /blogs/creating-snake-game-pygame
       image: /images/thumbnail/snake-game.jpg
