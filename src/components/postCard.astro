@@ -1,4 +1,5 @@
 ---
+import "../styles/blog.css";
 const {
   title = "Ezpie",
   description,
@@ -9,7 +10,7 @@ const {
 } = Astro.props;
 ---
 
-<li class="list-none p-0">
+<li class="list-none p-0 blog">
   <article class="max-w-sm overflow-hidden bg-gray-800 rounded-xl border-2 border-gray-600 hover:scale-105 duration-500">
     <a href={permalink}>
       <img class="w-full m-0 mb-1 rounded-t-xl" src={image} alt="Image for the post in ezpie" />
