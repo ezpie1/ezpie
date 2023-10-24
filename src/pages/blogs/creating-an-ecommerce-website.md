@@ -1,14 +1,12 @@
-<pre>
 ---
       layout: ../../layout/PostLayout.astro
       title: Creating an E-Commerce website
-      description: Learn how to create an E-Ccommerce Website layout and code it in your own creative way. Use latest technologies and frameworks for a faster and better rendering website
+      description: "Learn how to create an E-Ccommerce Website layout and code it in your own creative way. Use latest technologies and frameworks for a faster and better rendering website"
       published: 10 October 2023
       author: Yash Thipsay
       permalink: /blogs/Learn-how-to-create-an-E-Ccommerce-Website
       image: /images/thumbnail/ecommerce.png
-      ---
-</pre>
+---
 
 
 Tech Stack:-
