@@ -1,20 +1,18 @@
 ---
-      layout: ../../layout/PostLayout.astro
-      title: Making a basic E-Commerce website
-      description: "Learn how to create an E-Ccommerce Website layout and code it in your own creative way. Use latest technologies and frameworks for a faster and better rendering website"
-      published: 10 October 2023
-      author: Yash Thipsay
-      permalink: /blogs/Learn-how-to-create-an-E-Ccommerce-Website
-      image: /images/thumbnail/ecommerce.png
+layout: ../../layout/PostLayout.astro
+title: Making a basic E-Commerce website
+description: "Learn how to create an E-commerce Website layout and code it in your own creative way. Use latest technologies and frameworks for a faster and better rendering website"
+published: 10 October 2023
+author: Yash Thipsay
+permalink: /blogs/Learn-how-to-create-an-E-commerce-Website
+image: /images/thumbnail/ecommerce.png
 ---
-
 
 Tech Stack:-
 
 When you choose a tech stack, you have to make sure that all the technologies and frameworks work well with each other with creating API. The tech stack I have chosen is
 
 1. Next.js - A React framework used to create full-stack web applications.
-    
 
 2)FaunaDB - A relational database used for web applications. Used as a cloud API.  
 3)GraphQL - GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
@@ -69,7 +67,7 @@ You can create a mutation in the GraphQL playground provided in the FaunaDB dash
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698027355846/b5d23944-51c2-4598-8b55-e2428af8b993.png align="center")
 
-We also have entered a return value, `_id` to return a unique value mapping to the *Shop* created. Each *Shop* data can be accessed by the `_id` value, for deletion or other applications.
+We also have entered a return value, `_id` to return a unique value mapping to the _Shop_ created. Each _Shop_ data can be accessed by the `_id` value, for deletion or other applications.
 
 Other than mutations, we can also use queries for other CRUD applications such as findShopById or findProductById.
 
@@ -96,14 +94,14 @@ Let's connect GraphQL Apollo Client with the frontend.
 Install Apollo Client:  
 `npm install @apollo/client graphql`
 
-To authorize your database with the frontend, you need an *access key* and a *role.*
+To authorize your database with the frontend, you need an _access key_ and a _role._
 
-You can create a *role* from your faunaDB dashboard and set Shop and Product to read and write.
+You can create a _role_ from your faunaDB dashboard and set Shop and Product to read and write.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698032395538/39036f2f-4750-4c2c-b223-b1328d9198af.png align="center")
 
 To understand more about it, refer to the [official documentation](https://fauna.com/blog/getting-started-w-faunadb-quickstart-guide).  
-Create your key by setting it to the *role* you just created.
+Create your key by setting it to the _role_ you just created.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698046667246/277d61b1-f4ad-482c-b26c-b94bd0a8c3ae.png align="center")
 
@@ -116,7 +114,7 @@ Example of authorization in Typescript:
 
 ```typescript
 import {
-    ApolloClient, 
+    ApolloClient,
     InMemoryCache,
     createHttpLink,
 } from '@apollo/client'
@@ -185,7 +183,7 @@ function cartReducer(state, action){
         case "REMOVE_SINGLE_ITEM":
             const product = state.cart[action.payload._id];
             let updatedCart = {...state.cart};
-           
+
             if(product.qty === 0){
                 delete updatedCart[action.payload.id];
                 return {
@@ -200,8 +198,8 @@ function cartReducer(state, action){
                     [action.payload._id] :{
                         ...product,
                         qty: (product.qty!=0) ? (product.qty - 1) : {...state, cart: updatedCart} ,
-                    } 
-                        
+                    }
+
                 }
             }
             default:
@@ -254,11 +252,11 @@ query{
     }
   }
 }
-`  
+`
 
 
 const List: NextPage = () => {
-  
+
   const {loading, data, error} = useQuery(GET_PRODUCTS)
 
 console.log("==>", data)
@@ -273,7 +271,7 @@ The `<ProductList/>` component renders all products from data by taking the `dat
 
 ### Task 2:
 
-Create a ProductsList component to display all products, use the `dispatch` attribute from the context we created to add functions like *ADD\_TO\_CART* and *REMOVE\_FROM\_CART.* For example:
+Create a ProductsList component to display all products, use the `dispatch` attribute from the context we created to add functions like _ADD_TO_CART_ and _REMOVE_FROM_CART._ For example:
 
 ```javascript
   const {dispatch} = useContext(Context as any);
@@ -285,8 +283,8 @@ To render a list of products:
 <div className="">
         <div className={listGridStyle}>
         {/* @ts-ignore */}
-        {products.map(product => 
-          <ProductItem product={product} />  
+        {products.map(product =>
+          <ProductItem product={product} />
         )}
         </div>
       </div>
@@ -326,7 +324,7 @@ export default async function handler(
     res: NextApiResponse
 ) {
     const {cart} = req.body;
-  
+
     const lineItems = [];
     for (const key in cart) {
         if (cart.hasOwnProperty(key)) {
@@ -348,14 +346,14 @@ export default async function handler(
     }
 
     const session = await stripe.checkout.sessions.create({
-        
+
         mode: 'payment',
         billing_address_collection: 'required',
-        
+
         line_items: [...lineItems],
         success_url: 'http://localhost:3000/success',
         cancel_url: 'http://localhost:3000/cancel',
-       
+
     });
     console.log(session);
 
@@ -376,4 +374,3 @@ This completes our E-Commerce Website layout! This is a layout to give you a cre
 After creating your website, you can upload it [here](https://github.com/yashthipsay/Ecommerce_blog.git) where it will showcased for others to learn
 
 Like and follow for more updates!
-
