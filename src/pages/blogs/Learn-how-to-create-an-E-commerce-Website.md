@@ -29,7 +29,7 @@ We have seen a navbar on every website, that includes all types of buttons such 
 
 Let's create a sidebar or vertical navigation bar instead of a horizontal bar. It will look more like a gaming website, but let us try and check how a vertical nav bar will change the frontend of the website. This is an example of a sidebar that can be used instead of a navbar.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1697972479771/d966fd39-7c44-4c50-9535-28d3dd90eb67.png align="center")
+![image description](https://cdn.hashnode.com/res/hashnode/image/upload/v1697972479771/d966fd39-7c44-4c50-9535-28d3dd90eb67.png)
 
 Let's create a database with Fauna DB and create a schema with GraphQL and use it to create products. To create a database, we will need to create a schema for making changes in the database. For that, create a `schema.graphql` file in your directory. Let's create a schema for a products and shop section:
 
