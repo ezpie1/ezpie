@@ -47,7 +47,7 @@ To get started you can follow any of these steps:
       layout: ../../layout/PostLayout.astro
       title: Some good title
       description: Give a nice one para description(anything between a line or para)
-      published: the date when you wrote it
+      published: the date when you wrote it - month/day/year format only
       author: your name(not needed if you want to be unknow)
       permalink: /blogs/file-name
       image: /images/thumbnail/thumbnail(if you have)
